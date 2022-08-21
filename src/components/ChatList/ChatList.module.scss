@@ -13,7 +13,7 @@
         padding: 10px;
     }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
     .list_item {
         display: flex;
         justify-content: center;
