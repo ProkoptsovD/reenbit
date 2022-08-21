@@ -1,0 +1,16 @@
+.icon_button, .text_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+.text_button {
+    width: 100%;
+}

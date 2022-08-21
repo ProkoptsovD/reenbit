@@ -1,0 +1,25 @@
+@import '../../styles/mixins/scrollbar.scss';
+
+.dialog_window {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 100;
+    padding: 20px 10px 0px 10px;
+    background-color: var(--clr-bg-300);
+
+    overflow-y: scroll;
+
+    @include scrollbar(4px, var(--clr-brand-100));
+}
+.chat_list {
+    padding-bottom: 20px;
+}
+.list_item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.alert {
+    margin-top: 50px;
+    padding-inline: 20px;
+    font-size: var(--fs-350);
+    line-height: 1.7;
+}

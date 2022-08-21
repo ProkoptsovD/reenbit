@@ -1,0 +1,81 @@
+{
+    "chats": {
+        "1": [
+            {
+                "message": "Keep coding, bro! Waiting for you on Mars",
+                "createdAt": 1660555385000,
+                "to": "777",
+                "from": "1",
+                "isRead": false
+            },
+            {
+                "message": "Thanks, but hey, where is my Tesla",
+                "createdAt": 1660558505000,
+                "to": "1",
+                "from": "777",
+                "isRead": false
+            },
+            {
+                "message": "Bro?",
+                "createdAt": 1660560905000,
+                "to": "1",
+                "from": "777",
+                "isRead": false
+            },
+            {
+                "message": "Where is my car, dude???",
+                "createdAt": 1660572125000,
+                "to": "1",
+                "from": "777",
+                "isRead": false
+            }
+        ],
+        "2": [
+            {
+                "message": "Still waiting for Amazon discount...",
+                "createdAt": 1655456525000,
+                "to": "2",
+                "from": "777",
+                "isRead": false
+            },
+            {
+                "message": "Don't make me order from Aliexpress",
+                "createdAt": 1655460425000,
+                "to": "1",
+                "from": "777",
+                "isRead": false
+            }
+        ],
+        "3": [
+            {
+                "message": "I know that you have used a cracked Windows before",
+                "createdAt": 1648810925000,
+                "to": "777",
+                "from": "3",
+                "isRead": false
+            }
+        ],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [
+            {
+                "message": "Chuck says the world is his",
+                "createdAt": 1658773085000,
+                "to": "8",
+                "from": "777",
+                "isRead": false
+            },
+            {
+                "message": "No way! I'll kick his ass",
+                "createdAt": 1658773145000,
+                "to": "777",
+                "from": "8",
+                "isRead": false
+            }
+        ],
+        "9": [],
+        "10": []
+    }
+}

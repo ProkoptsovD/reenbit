@@ -1,0 +1,21 @@
+.box {
+    padding: 20px;
+    border-top: 2px solid var(--clr-border-400);
+}
+.inner_wrapper {
+    position: relative;
+}
+input.input {
+    padding: 14px 20px;
+}
+.button {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+.icon {
+    width: 22px;
+    fill: var(--clr-text-400);
+}

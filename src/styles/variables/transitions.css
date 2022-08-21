@@ -1,0 +1,8 @@
+:root {
+    /* durations */
+    --tr-duration-300: 150ms;
+    --tr-duration-400: 250ms;
+
+    /* timing functions */
+    --tr-func-400: linear;
+}

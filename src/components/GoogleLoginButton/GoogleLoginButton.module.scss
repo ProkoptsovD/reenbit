@@ -1,0 +1,17 @@
+.button {
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 1px solid var(--clr-border-400);
+    background-color: #ffffff;
+
+    &:hover {
+        box-shadow: 0px 0px 6px 1px inset var(--clr-border-400);
+    }
+
+    & > svg {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+}

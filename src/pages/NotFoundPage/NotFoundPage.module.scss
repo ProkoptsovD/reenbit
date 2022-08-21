@@ -1,0 +1,14 @@
+.back_link {
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--clr-brand-200);
+    color: #ffffff;
+
+    transition: background-color var(--tr-duration-300) var(--tr-func-400);
+
+    &:hover {
+        background-color: var(--clr-brand-100);
+    }
+}

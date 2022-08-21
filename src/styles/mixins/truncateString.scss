@@ -1,0 +1,6 @@
+@mixin truncateString ($linesAmount: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $linesAmount;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

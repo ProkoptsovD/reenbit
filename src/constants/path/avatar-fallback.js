@@ -1,0 +1,1 @@
+export const avatarFallback = require('../../assets/images/avatar-fallback.png');

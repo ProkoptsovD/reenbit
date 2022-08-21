@@ -1,0 +1,77 @@
+.wrapper {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    animation: swing 20s linear infinite alternate backwards;
+}
+.unread {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 50%;
+    font-size: 0.7em;
+    outline: 2px solid var(--clr-unread-text);
+
+    border-radius: 50%;
+
+    background-color: var(--clr-unread-bg-200);
+    color: var(--clr-unread-text);
+}
+.icon {
+    fill: var(--clr-unread-bg-100);
+}
+
+@media screen and (max-width: 767px) {
+	.unread {
+		width: 55%;
+		height: 55%;
+		outline: none;
+	}
+	.icon {
+		display: none;
+	}
+}
+
+@keyframes swing {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	1.5% {
+		transform: rotate(5deg);
+	}
+
+	2.5% {
+		transform: rotate(-5deg);
+	}
+
+	3.75% {
+		transform: rotate(7deg);
+	}
+
+	5.15% {
+		transform: rotate(-7deg);
+	}
+
+	6.65% {
+		transform: rotate(3deg);
+	}
+
+	8.0% {
+		transform: rotate(-1deg);
+	}
+
+	10.0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+
+}

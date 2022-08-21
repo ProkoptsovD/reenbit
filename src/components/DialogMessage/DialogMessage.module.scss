@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+}
+.avatar {
+    margin-right: 10px;
+}
+.created_at {
+    margin-top: 6px;
+    margin-left: 12px;
+    font-size: var(--fs-250);
+}

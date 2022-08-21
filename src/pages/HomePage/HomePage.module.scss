@@ -1,0 +1,62 @@
+@import '../../styles/mixins/scrollbar.scss';
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    padding-bottom: 20px;
+
+    .inner_wrapper_1 {
+        flex-basis: 30%;
+        border-right: 1px solid var(--clr-border-400);
+        border-bottom: 2px solid var(--clr-border-400);
+    }
+    
+    .inner_wrapper_2 {
+        flex-basis: 70%;
+        border-bottom: 2px solid var(--clr-border-400);
+    }
+}
+section.section {
+    height: 74vh;
+    padding-bottom: 0px;
+    background-color: var(--clr-bg-100);
+    overflow-y: scroll;
+
+    @include scrollbar(1px, var(--clr-brand-100));
+}
+.section_title {
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    font-weight: var(--fw-300);
+    font-size: var(--fs-500);
+    color: var(--clr-brand-200);
+}
+.section_container {
+    padding: 0;
+}
+.avatar:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 369px) {
+    .wrapper div.inner_wrapper_1 {
+        flex-basis: auto;
+        width: 75px;
+        overflow-x: hidden;
+    }
+    .section_title {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .section_title {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .wrapper div.inner_wrapper_2 {
+        flex-basis: 90%;
+    }
+}

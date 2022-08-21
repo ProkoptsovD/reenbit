@@ -1,0 +1,38 @@
+:root {
+    /* common pallete */
+    --clr-bg-100: #ffffff;
+    --clr-bg-300: #fafafa;
+    --clr-bg-400: #f5f5f5;
+    
+    --clr-text-200: #eaecef;
+    --clr-text-300: #c7c7c7;
+    --clr-text-400: #9b9898;
+    --clr-text-500: #6d6b6b;
+    --clr-text-600: #565151;
+
+    /* brand pallete */
+    
+    --clr-brand-100: #8ec3d6;
+    --clr-brand-200: #30b2e1;
+
+    /* dialog pallete*/
+    --clr-sent-message: #3c4154;
+    --clr-recieved-message: #e0e0e0;
+    --clr-unread-bg-100: #a19f9f;
+    --clr-unread-bg-200: #e05d5d;
+    --clr-unread-text: #ffffff;
+
+    /* online status pallete*/
+    --clr-online: #96c599;
+    --clr-offline: #FF3131;
+    --clr-absent: #FFC300;
+
+    /* border pallete */
+    --clr-border-400: #e3e4e5;
+
+    /* interaction pallete */;
+    --clr-input-focused: var(--clr-brand-100);
+
+    /* form pallete */
+    --clr-required: #ff0000;
+}

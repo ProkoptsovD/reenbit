@@ -1,0 +1,40 @@
+.form {
+    flex-grow: 100;
+    max-width: 400px;
+    margin: 0 auto;
+
+    .auth_input {
+        border-radius: 6px;
+    }
+
+    .button {
+        height: 37px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: var(--clr-brand-200);
+        color: #ffffff;
+
+        transition: background-color var(--tr-duration-300) var(--tr-func-400);
+
+        &:hover {
+            background-color: var(--clr-brand-100);
+        }
+    }
+}
+
+.input_wrapper:not(:last-child) {
+    margin-bottom: 10px;
+}
+.label {
+    margin-left: 5px;
+}
+.or {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.tip {
+    margin-top: 10px;
+    font-size: var(--fs-300);
+    text-align: center;
+}

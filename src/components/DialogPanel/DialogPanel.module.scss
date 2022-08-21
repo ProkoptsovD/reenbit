@@ -1,0 +1,22 @@
+.dialog_panel {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 100%;
+}
+.subheader {
+    height: 80px;
+    padding: 18px 20px;
+    border-bottom: 2px solid var(--clr-border-400);
+}
+.dialog_window {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 20px 10px;
+    background-color: var(--clr-bg-100);
+}
+.friend_name {
+    font-size: var(--fs-600);
+    color: var(--clr-text-600);
+}

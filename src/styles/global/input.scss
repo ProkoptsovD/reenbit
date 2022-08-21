@@ -1,0 +1,15 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--clr-border-400);
+    border-radius: 100px;
+
+    color: var(--clr-text-400);
+}
+.input:focus-within {
+    outline-color: var(--clr-input-focused);
+}
+.input::placeholder {
+    color: var(--clr-text-300);
+}

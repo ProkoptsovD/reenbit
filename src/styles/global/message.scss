@@ -1,0 +1,19 @@
+.message {
+    max-width: 550px;
+    padding: 10px 14px;
+    font-size: var(--fs-300);
+    line-height: 1.4;
+    border-radius: 30px;
+    overflow-wrap: break-word;
+}
+.fromFriend {
+    background-color: var(--clr-sent-message);
+    color: var(--clr-text-200);
+}
+.fromUser {
+    background-color: var(--clr-recieved-message);
+    color: var(--clr-text-500);
+}
+.flexEnd {
+    justify-content: flex-end;
+}

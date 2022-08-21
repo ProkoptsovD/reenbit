@@ -1,0 +1,46 @@
+@import 'styles/mixins/truncateString.scss';
+
+.name_wrapper {
+    font-size: var(--fs-350);
+    line-height: 1.2;
+}
+.friend_card {
+    position: relative;
+    display: grid;
+    grid-template-columns: .5fr 4fr 1fr;
+    column-gap: 10px;
+}
+.friend_name {
+    margin-bottom: 6px;
+    font-weight: var(--fw-500);
+    color: var(--clr-text-400);
+}
+.last_message {
+    @include truncateString(1);
+
+    font-size: var(--fs-300);
+
+}
+.created_at {
+    align-self: flex-start;
+    font-size: var(--fs-250);
+    line-height: 2;
+}
+div.unread {
+    position: absolute;
+    top: 10px;
+    right: -17px;
+}
+
+@media screen and (max-width: 767px) {
+    .name_wrapper, .created_at {
+        display: none;
+    }
+    .friend_card {
+        display: block;
+    }
+    div .unread {
+        left: 22px;
+        top: -8px;      
+    }
+}

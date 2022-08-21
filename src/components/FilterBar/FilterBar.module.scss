@@ -1,0 +1,18 @@
+.wrapper {
+    position: relative;
+}
+input.filter {
+    height: 30px;
+    padding-left: 30px;
+    font-size: var(--fs-300);
+}
+.search_icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    fill: var(--clr-text-300);
+
+    transform: translateY(-50%);
+}

@@ -1,0 +1,21 @@
+.list_item {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--clr-border-400);
+
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: var(--clr-brand-100) 0px 3px 8px;
+    }
+}
+@media screen and (max-width: 369px) {
+    .list_item {
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .list_item {
+        display: flex;
+        justify-content: center;
+    }
+}

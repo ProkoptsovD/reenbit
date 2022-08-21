@@ -1,0 +1,18 @@
+:root {
+    /* font family */
+    --ff-100: 'Open Sans', sans-serif;
+
+    /* font weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    /* font size */
+    --fs-250: 10px;
+    --fs-300: 12px;
+    --fs-350: 14px;
+    --fs-400: 16px;
+    --fs-500: 20px;
+    --fs-600: 24px;
+}
