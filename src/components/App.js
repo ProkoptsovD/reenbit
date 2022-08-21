@@ -42,8 +42,8 @@ export const App = () => {
 
   // protected & public routes
   const Home = <PrivateRoute>{ <HomePage /> }</PrivateRoute>;
-  const Login = <PublicRoute restricted>{ <LoginPage /> }</PublicRoute>;
-  const Register = <PublicRoute restricted>{ <RegisterPage /> }</PublicRoute>;
+  const Login = <PublicRoute restricted navigateTo={ ROUTES.HOME } >{ <LoginPage /> }</PublicRoute>;
+  const Register = <PublicRoute restricted navigateTo={ ROUTES.HOME }>{ <RegisterPage /> }</PublicRoute>;
 
   return (
     <>

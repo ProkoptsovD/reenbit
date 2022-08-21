@@ -7,8 +7,8 @@ import { ROUTES } from "constants";
 const defaultNavigate = ROUTES.HOME;
 
 export const PublicRoute = ({ children, restricted, navigateTo = defaultNavigate }) => {
-    const user = useSelector(userSelectors.getUser);
-    const shouldRedirect = user?.token && restricted;
+    const token = useSelector(userSelectors.getToken);
+    const shouldRedirect = token && restricted;
 
     return (
         shouldRedirect ? <Navigate to={ navigateTo } replace={ true } /> : children

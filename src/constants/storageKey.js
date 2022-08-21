@@ -9,5 +9,11 @@ export const storageKey = {
         user: 'user',
         friends: 'friends'
     },
-    draftMessage: 'draftMessage'
+    draftMessage: 'draftMessage',
+    authForm: {
+        firstName: 'firstName',
+        lastName: 'lastName',
+        email: 'email',
+        password: 'password',
+    }
 }

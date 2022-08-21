@@ -26,10 +26,10 @@ const getAllFriendSortedByMostRecentMessage = createSelector(
     (allFriends, allConversations) => {
         const copyAllFriendsArr = [...allFriends];
         const recentMessageTimestamps = allFriends.reduce((acc, { id }) => {
-                const onlyFriendMessages = allConversations[id].filter(({ from }) => from === id);
+                const onlyFriendMessages = allConversations[id]?.filter(({ from }) => from === id);
                 const lastMessageIndex = onlyFriendMessages?.length ? onlyFriendMessages?.length - 1 : null;
                 
-                acc[id] = onlyFriendMessages[lastMessageIndex]?.createdAt ?? 0;
+                acc[id] = onlyFriendMessages?.[lastMessageIndex]?.createdAt ?? 0;
 
                 return acc;
             }, {});

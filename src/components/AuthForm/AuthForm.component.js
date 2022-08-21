@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import toast from 'react-hot-toast';
 import InputWithLabel from 'components/common/InputWithLabel';
@@ -9,6 +9,9 @@ import { ROUTES } from 'constants';
 import { authApi } from 'services/authApi';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'redux/user/userSlice';
+import { storage } from 'services/storage';
+import { storageKey } from 'constants';
+import { initializeOnRefresh } from 'utils/initializeOnRefresh';
 
 const AuthForm = ({
     isRegisterForm,
@@ -18,11 +21,13 @@ const AuthForm = ({
     labelStyles = '',
     buttonStyles = ''
 }) => {
-    const [ firstName, setFirstName ] = useState('');
-    const [ lastName, setLastName ] = useState('');
-    const [ email, setEmail ] = useState('');
-    const [ password, setPassword ] = useState('');
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const [ firstName, setFirstName ] = useState(initializeOnRefresh(storageKey.authForm.firstName, ''));
+    const [ lastName, setLastName ] = useState(initializeOnRefresh(storageKey.authForm.lastName, ''));
+    const [ email, setEmail ] = useState(initializeOnRefresh(storageKey.authForm.email, ''));
+    const [ password, setPassword ] = useState(initializeOnRefresh(storageKey.authForm.password, ''));
 
     // styles
     const formCss = `${styles.form} ${formStyles}`;
@@ -30,6 +35,14 @@ const AuthForm = ({
     const inputWrapperCss = `${styles.input_wrapper} ${inputWrapperStyles}`;
     const labelCss = `${styles.label} ${labelStyles}`;
     const buttonCss = `text_button ${styles.button} ${buttonStyles}`;
+
+    useEffect(() => {
+        storage.save(storageKey.authForm.firstName, firstName);
+        storage.save(storageKey.authForm.lastName, lastName);
+        storage.save(storageKey.authForm.email, email);
+        storage.save(storageKey.authForm.password, password);
+
+    }, [firstName, lastName, email, password]);
     
     const reset = () => {
         setFirstName('');
@@ -40,6 +53,7 @@ const AuthForm = ({
     const handleResponse = ({ data }) => {
         reset();
         dispatch(userActions.setUserCredentials(data.token));
+        navigate(ROUTES.HOME);
     };
     const handleError = ({ message }) => toast.warning(message);
     const handleSubmit = (e) => {
