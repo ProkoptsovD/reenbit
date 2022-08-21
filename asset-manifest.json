@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reenbit/static/css/main.90be6634.css",
-    "main.js": "/reenbit/static/js/main.06673423.js",
-    "static/css/839.6a33bbac.chunk.css": "/reenbit/static/css/839.6a33bbac.chunk.css",
+    "main.js": "/reenbit/static/js/main.829d24db.js",
+    "static/css/839.786e9ec9.chunk.css": "/reenbit/static/css/839.786e9ec9.chunk.css",
     "static/js/839.8dfd16b0.chunk.js": "/reenbit/static/js/839.8dfd16b0.chunk.js",
     "static/css/188.9e752399.chunk.css": "/reenbit/static/css/188.9e752399.chunk.css",
     "static/js/188.6ca31cdb.chunk.js": "/reenbit/static/js/188.6ca31cdb.chunk.js",
@@ -20,8 +20,8 @@
     "static/media/bell.svg": "/reenbit/static/media/bell.3989c405f1d3c7aa316bdc04f3602657.svg",
     "static/media/send-message.svg": "/reenbit/static/media/send-message.e57b73cc9ac4245f1a6f8b3b90daa2f3.svg",
     "main.90be6634.css.map": "/reenbit/static/css/main.90be6634.css.map",
-    "main.06673423.js.map": "/reenbit/static/js/main.06673423.js.map",
-    "839.6a33bbac.chunk.css.map": "/reenbit/static/css/839.6a33bbac.chunk.css.map",
+    "main.829d24db.js.map": "/reenbit/static/js/main.829d24db.js.map",
+    "839.786e9ec9.chunk.css.map": "/reenbit/static/css/839.786e9ec9.chunk.css.map",
     "839.8dfd16b0.chunk.js.map": "/reenbit/static/js/839.8dfd16b0.chunk.js.map",
     "188.9e752399.chunk.css.map": "/reenbit/static/css/188.9e752399.chunk.css.map",
     "188.6ca31cdb.chunk.js.map": "/reenbit/static/js/188.6ca31cdb.chunk.js.map",
@@ -35,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.90be6634.css",
-    "static/js/main.06673423.js"
+    "static/js/main.829d24db.js"
   ]
 }
