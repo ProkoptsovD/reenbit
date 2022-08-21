@@ -2,7 +2,7 @@
   "name": "reenbit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://drokoptsovd.github.io/reenbit/",
+  "homepage": "https://prokoptsovd.github.io/reenbit/",
   "dependencies": {
     "@react-oauth/google": "^0.2.6",
     "@reduxjs/toolkit": "^1.8.4",
