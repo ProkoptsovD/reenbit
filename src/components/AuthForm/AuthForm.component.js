@@ -30,15 +30,18 @@ const AuthForm = ({
     const inputWrapperCss = `${styles.input_wrapper} ${inputWrapperStyles}`;
     const labelCss = `${styles.label} ${labelStyles}`;
     const buttonCss = `text_button ${styles.button} ${buttonStyles}`;
-
-    const handleResponse = ({ data }) => dispatch(userActions.setUserCredentials(data.token));
-    const handleError = ({ message }) => toast.warning(message);
+    
     const reset = () => {
         setFirstName('');
         setLastName('');
         setEmail('');
         setPassword('');
     }
+    const handleResponse = ({ data }) => {
+        reset();
+        dispatch(userActions.setUserCredentials(data.token));
+    };
+    const handleError = ({ message }) => toast.warning(message);
     const handleSubmit = (e) => {
         e.preventDefault();
 
