@@ -15,7 +15,12 @@ const load = key => {
         console.error("Get state error: ", error.message);
     }
 };
+const saveAll = (arrKeys, value) => arrKeys.forEach((key, index) => save(key, value[index]));
+const clearAll = arrKeys => arrKeys.forEach(key => window.localStorage.removeItem(key));
+
 export const storage = {
     save,
     load,
+    saveAll,
+    clearAll
 };

@@ -37,10 +37,9 @@ const AuthForm = ({
     const buttonCss = `text_button ${styles.button} ${buttonStyles}`;
 
     useEffect(() => {
-        storage.save(storageKey.authForm.firstName, firstName);
-        storage.save(storageKey.authForm.lastName, lastName);
-        storage.save(storageKey.authForm.email, email);
-        storage.save(storageKey.authForm.password, password);
+        storage.saveAll(
+            Object.values(storageKey.authForm),
+            [firstName, lastName, email, password]);
 
     }, [firstName, lastName, email, password]);
     
@@ -71,6 +70,8 @@ const AuthForm = ({
                 .then(handleResponse)
                 .catch(handleError)
         }
+
+        storage.clearAll(Object.values(storageKey.authForm));
     }
 
     return (
